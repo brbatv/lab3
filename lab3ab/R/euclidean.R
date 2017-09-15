@@ -6,6 +6,7 @@
 #' @examples
 #' euclidean(1000, 100)
 #' euclidean(10839893, 13238)
+#' @export euclidean
 
 euclidean <-
 function(a,b)

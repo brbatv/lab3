@@ -2,22 +2,22 @@
 % Please edit documentation in R/euclidean.R
 \name{euclidean}
 \alias{euclidean}
-\title{Add together two numbers.}
+\title{Find greatest common divisor between two numbers}
 \usage{
 euclidean(a, b)
 }
 \arguments{
-\item{x}{A number.}
+\item{a}{A number.}
 
-\item{y}{A number.}
+\item{b}{A number.}
 }
 \value{
-The sum of \code{x} and \code{y}.
+Greatest common division using Euclidean's algorithm
 }
 \description{
-Add together two numbers.
+Find greatest common divisor between two numbers
 }
 \examples{
-add(1, 1)
-add(10, 1)
+euclidean(1000, 100)
+euclidean(10839893, 13238)
 }

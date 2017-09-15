@@ -9,7 +9,7 @@ dijkstra(graph, init_node)
 \arguments{
 \item{graph}{The Graph. Should be data.frame with 3 numerical columns. The first column contains the starting vertices of each edges, when the second one contains the ending vertices of these edges. The third columns contains the weights of each edge.}
 
-\item{init_node}{The vertix from which the distances are calculated}
+\item{init_node}{The vertix fro?m which the distances are calculated}
 }
 \value{
 A vector with the distance between \code{init_node} all the other vertices.
