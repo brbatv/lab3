@@ -20,7 +20,7 @@ dijkstra <- function(graph, init_node){
       v2<-graph[[2]] #vector of nodes "to"
       w<-graph[[3]] #vector of weights
       n<-length(unique(v1)) #number of nodes
-    
+      stopifnot(init_node<=n)
       dist<-length(n) #vector of output
       Q<-c(1:n) #subset of nodes of our graph
      
