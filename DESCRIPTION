@@ -1,0 +1,11 @@
+Package: lab3ab
+Type: Package
+Title: Euclidean and dijkstra algorithms
+Version: 1.0
+Date: 2017-09-15
+Authors@R: c(
+    person("De Biase", "Alessia", email = "alessia_debiase@libero.it", role = c("aut")),
+    person("Barakat", "Bruno", email = "barakatbruno@gmail.com", role = c("cre","aut")))
+Description: Find the greatest common divisor or find the shortest paths !  
+License: GPL 
+RoxygenNote: 6.0.1
