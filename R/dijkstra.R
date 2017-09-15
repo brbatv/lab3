@@ -12,6 +12,7 @@
 
 dijkstra <-
 function(graph, init_node){
+    stopifnot(dim(graph)[2]==3 && all(names(graph)==c("v1","v2","w")))
   
    if (is.data.frame(graph)==TRUE && is.numeric(init_node)==TRUE && is.vector(graph[[1]])==TRUE && is.vector(graph[[2]])==TRUE && is.vector(graph[[3]])==TRUE){
     
