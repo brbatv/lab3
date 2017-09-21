@@ -7,17 +7,23 @@
 euclidean(a, b)
 }
 \arguments{
-\item{a}{A number.}
+\item{a}{A natural number.}
 
-\item{b}{A number.}
+\item{b}{A natural number.}
 }
 \value{
-Greatest common division using Euclidean's algorithm
+The largest natural number that divides both a and b.
 }
 \description{
-Find greatest common divisor between two numbers
+It calculates the greatest common divisor of \item{a} and \item{b} using the Euclidean algorithm. 
 }
 \examples{
 euclidean(1000, 100)
 euclidean(10839893, 13238)
+}
+\references{
+
+Wikipedia (2017). \emph{Eucliedean algorithm - Wikipedia, The Free Encyclopedia.}
+\url{https://en.wikipedia.org/wiki/Euclidean_algorithm} , accessed 2017-09-14.
+
 }

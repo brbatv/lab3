@@ -2,24 +2,36 @@
 % Please edit documentation in R/dijkstra.R
 \name{dijkstra}
 \alias{dijkstra}
-\title{Find shortest distance in a graph}
+\title{Find shortest distance in a graph from a given node to the others.}
 \usage{
 dijkstra(graph, init_node)
 }
 \arguments{
-\item{graph}{The Graph. Should be data.frame with 3 numerical columns. The first column contains the starting vertices of each edges, when the second one contains the ending vertices of these edges. The third columns contains the weights of each edge.}
+\item{graph}{The graph should be a data.frame with 3 numerical columns. The first column contains the starting vertices of each edges, when the second one contains the ending vertices of these edges. The third columns contains the weights of each edge.}
 
-\item{init_node}{The vertix fro?m which the distances are calculated}
+\item{init_node}{The vertix from which the distances are calculated}
 }
 \value{
-A vector with the distance between \code{init_node} all the other vertices.
+A vector with the distances between \code{init_node} and all the other vertices in the graph.
 }
 \description{
-Find shortest distance in a graph
+
+Find shortest paths in a graph between the given node and the other ones using the Dijkstra's algorithm. 
 }
 \examples{
-dijkstra(data.frame(v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6), v2=c(2,3,6,1,3,4,1,2,4,6,2,3,5,4,6,1,3,5), w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9)), init_node=1)
+
+graph <- data.frame(v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6), v2=c(2,3,6,1,3,4,1,2,4,6,2,3,5,4,6,1,3,5), w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9))
+
+init_node <- 1
+
+dijkstra(graph, init_node)
+
 }
+
 \references{
-\url{ https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm }
+
+Wikipedia (2017). \emph{Dijkstra's algorithm - Wikipedia, The Free Encyclopedia.}
+\url{https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+}, accessed 2017-09-14.
+
 }
