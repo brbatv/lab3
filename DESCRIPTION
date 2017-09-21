@@ -6,6 +6,9 @@ Date: 2017-09-15
 Authors@R: c(
     person("De Biase", "Alessia", email = "alessia_debiase@libero.it", role = c("aut")),
     person("Barakat", "Bruno", email = "barakatbruno@gmail.com", role = c("cre","aut")))
+Author: Barakat Bruno [aut, cre],
+  De Biase Alessia [aut]
+Maintainer: Bruno Barakat <barakatbruno@gmail.com>
 Description: Find the greatest common divisor between two numbers or find the shortest path in a graph.
 Depends: R(>= 2.10) 
 License: GPL 

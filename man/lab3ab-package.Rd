@@ -42,10 +42,3 @@ Wikipedia (2017). \emph{Dijkstra's algorithm - Wikipedia, The Free Encyclopedia.
 
 \keyword{ package }
 
-\seealso{
-
-\code{\link[numbers]{extGCD}} , \code{\link[gdistance]{accCost}}
-
-}
-\examples{
-}
